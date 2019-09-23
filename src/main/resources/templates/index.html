@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+<script>
+  const headers  = new Headers({
+    'Access-Control-Allow-Origin': 'Authorization',
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwNjc2MjExMDMyIiwiZXhwIjoxNTU5MDMyMzAyfQ.gVsKgnUwZSEu7_zRkDe9o7dH1IBVHdDUBLFGsazac_Ptm1UrjFLtlb4tB_MUPfjb7M6SrQWS9vU99Mg80zTxSQ',
+  });
+
+  fetch('http://37.59.228.228:9090/event?id=47', {
+    method: 'GET',
+    headers,
+  }).then(res => {
+    console.log(res)
+  })
+
+</script>
+</body>
+</html>
+
